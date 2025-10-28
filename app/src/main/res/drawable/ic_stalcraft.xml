@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:fillColor="@color/stalcraft_primary"
+      android:pathData="M12,2L4,6v12l8,4l8,-4V6L12,2zM12,4.5l5.5,2.75l-5.5,2.75L6.5,7.25L12,4.5zM6.5,9.25L12,12l5.5,-2.75V16.5l-5.5,2.75l-5.5,-2.75V9.25z"/>
+</vector>

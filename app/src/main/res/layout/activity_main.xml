@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF1A1A1A"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stalcraft Build Calculator"
+            android:textColor="#FFE0E0E0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Build Name -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Название сборки"
+            android:textColor="#FFE0E0E0"
+            android:textColorHint="#FFB0B0B0"
+            android:background="#FF2D2D2D"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Backpack Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рюкзак"
+            android:textColor="#FFE0E0E0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FF2D2D2D"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Не выбран"
+                android:textColor="#FFB0B0B0"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Выбрать"
+                android:backgroundTint="#FF4A76A8"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- Armor Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Броня"
+            android:textColor="#FFE0E0E0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FF2D2D2D"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Не выбрана"
+                android:textColor="#FFB0B0B0"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Выбрать"
+                android:backgroundTint="#FF4A76A8"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- Artifacts Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Артефакты (0/7)"
+            android:textColor="#FFE0E0E0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF2D2D2D"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <!-- Artifact Slots -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:background="#FF3A3A3A"
+                    android:textColor="#FF4A76A8"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:background="#FF3A3A3A"
+                    android:textColor="#FF4A76A8"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:background="#FF3A3A3A"
+                    android:textColor="#FF4A76A8"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:background="#FF3A3A3A"
+                    android:textColor="#FF4A76A8"
+                    android:layout_margin="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:background="#FF3A3A3A"
+                    android:textColor="#FF4A76A8"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:background="#FF3A3A3A"
+                    android:textColor="#FF4A76A8"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:background="#FF3A3A3A"
+                    android:textColor="#FF4A76A8"
+                    android:layout_margin="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Total Stats -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Общие характеристики"
+            android:textColor="#FFE0E0E0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF2D2D2D"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <!-- Protection Stats -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Защита"
+                android:textColor="#FF4A76A8"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Баллистическая защита:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Взрывоустойчивость:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Химическая защита:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Anomaly Stats -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Аномалии"
+                android:textColor="#FFA84AC0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Термическая защита:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Защита от электричества:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Пси-защита:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Other Stats -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дополнительно"
+                android:textColor="#FFE5A50A"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Выносливость:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Радиация:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Вес:"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/100 кг"
+                    android:textColor="#FFE0E0E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Сохранить сборку"
+                android:backgroundTint="#FF4A76A8"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Сбросить"
+                android:backgroundTint="#FF444444"
+                android:textColor="#FFE0E0E0"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
